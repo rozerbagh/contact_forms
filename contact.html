@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <title>Banarashi Betel leaf</title>
+    <link rel="shortcut icon" type="image/icon" href="./img/b_logo.png" />
+</head>
+
+<body data-barba="wrapper">
+
+    <header>
+        <nav class="navbar">
+            <a class="nav-logo" href="index.html"><img src="./img/b_logo.png" alt="logo-img" class="img-logo"> Banarashi
+                Betel
+                leaf</a>
+            <div class="hamburger">
+                <div class="hamburger">
+                    <div class="navbar-toggler-icon" id="toggle-btn"></div>
+                </div>
+            </div>
+            <ul class="navbar-list" id="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main data-barba="container" data-barba-namespace="contact">
+
+        <section id="banner-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 form">
+                        <img src="./img/Paper Plane.svg" alt="paper-plane" class="img-fluid paper-plane">
+                        <div class="row contact-heading">
+                            <div class="col-md-12">
+                                <br>
+                                <h1 class="sub-title" data-aos="fade-up">Drop Us a Line !</h1>
+                                <br>
+                            </div>
+
+                        </div>
+
+                        <form method="POST" action="mail.php" onsubmit="validateContactForm()">
+
+                            <div class="row form-group" data-aos="fade-right">
+                                <div class="col-md-12">
+                                    <input type="text" name="name" class="form-control" placeholder="Full Name*"
+                                        id="contact-name">
+                                    <p>Please enter valid Name which should conatins only
+                                        letters!</p>
+                                </div>
+                            </div>
+
+                            <div class="row form-group" data-aos="fade-left">
+                                <div class="col-md-12">
+                                    <input type="email" name="email" class="form-control" placeholder="Email*"
+                                        id="contact-email">
+                                    <p>Email must be a valid address, e.g. me@mydomain.com</p>
+                                </div>
+                            </div>
+                            <div class="row form-group" data-aos="fade-right">
+                                <div class="col-md-12">
+                                    <input type="number" name="telephone" class="form-control" placeholder="Phone No.*"
+                                        id="contact-phone-no">
+                                    <p>Please enter valid Phone No. !</p>
+                                </div>
+                            </div>
+                            <div class="row form-group" data-aos="fade-left">
+                                <div class="col-md-12">
+                                    <textarea name="message" id="form-messages" cols="30" rows="6" class="form-control"
+                                        placeholder="Messages*" id="contact-messages"></textarea>
+
+                                </div>
+                            </div>
+                            <div class="row" data-aos="fade-right">
+                                <div class="col">
+                                    <button class="btn success-btn" type="submit" id="submit">
+                                        Send <i class="fa fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-border"></div>
+                    </div>
+
+                    <div class="col-md-5 contact-widgets">
+                        <div class="row widgets">
+                            <div class="col-2"><i class="fa fa-phone"></i></div>
+                            <div class="col-10">
+                                <p>+91 8494 8494 41</p>
+                            </div>
+                        </div>
+                        <div class="row widgets">
+                            <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="col-10">
+                                <p>APC CIRCLE, JIGANI, <br>
+                                    BANGALORE, <br>
+                                    KARNATAKA, <br>
+                                    560064</p>
+                            </div>
+                        </div>
+                        <div class="row widgets">
+                            <a href="http://www.facebook.com/banarasibetelleaf" target="_blank" class="col-2">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="http://www.instagram.com/banarasi_betel_leaf" target="_blank" class="col-2">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="http://www.twitter.com/banarasibetelleaf" target="_blank" class="col-2">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <!-- <img src="./img/footertop.svg" alt="footer" class="img-fluid img-footer" data-aos="fade-up"> -->
+            <div class="container ">
+                <div class="row banner-footer">
+                    <div class="col-md-3 footer-nav" data-aos="fade-up">
+                        <a href="index.html"><img src="./img/Logo_XD.svg" alt="" class="footer-img-logo img-fluid"></a>
+                        <p>We present delicately balanced blend flavor of classic Sweet Paans with Desserts</p>
+                    </div>
+                    <div class="col-md-3 footer-nav" data-aos="fade-up">
+                        <h2>Quick Links</h2>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-items"><a href="index.html">Home</a></li>
+                            <li class="footer-nav-items"><a href="menu.html">Menu</a></li>
+                            <li class="footer-nav-items"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-nav" data-aos="fade-up">
+                        <h2>Services</h2>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-items"><a href="service.html">Marriage</a></li>
+                            <li class="footer-nav-items"><a href="service.html">Birthdays</a></li>
+                            <li class="footer-nav-items"><a href="service.html">Engagements</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-nav" data-aos="fade-up">
+                        <div class="row">
+                            <a href="http://www.facebook.com/banarasibetelleaf" target="_blank" class="col-2">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="http://www.instagram.com/banarasi_betel_leaf" target="_blank" class="col-2">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="http://www.twitter.com/banarasibetelleaf" target="_blank" class="col-2">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" data-aos="fade-up">
+                    <div class="col-md-12">
+                        <!-- Copyright -->
+                        <div class="footer-copyright">
+                            Copyright &copy;
+                            <script
+                                type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
+                            | All
+                            rights are reserved |
+                            <a href="https://mrdesign.com/">Banarasi Betel leaf</a>
+                        </div>
+                        <!-- Copyright -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
