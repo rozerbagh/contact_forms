@@ -1,35 +1,3 @@
-export function menuStarRatings() {
-    let stars = document.getElementsByClassName('star');
-    let starEvents = ['click', 'mouseover', 'mouseout'];
-    for (let i = 0; i < stars.length; i++) {
-        stars[i].starValue = (i + 1);
-        starEvents.forEach((element) => {
-            stars[i].addEventListener(element, showRating);
-        })
-    }
-    function showRating(e) {
-        let type = e.type;
-        let starValue = this.starValue;
-        console.log(type, starValue);
-        stars.forEach((ele, index) => {
-            if (type == 'mouseover') {
-                if (index < starValue)
-                    ele.style.color = '$yellow';
-            }
-
-        })
-
-    }
-};
-
-const details = document.getElementById('menu-details');
-const menuCardsDetails = document.getElementsByClassName('menu-items');
-export let menuDetails = function () {
-    Array.from(menuCardsDetails).forEach(function (elements) {
-        elements.style.margin = '0.5em';
-    });
-};
-
 export function validateContactForm() {
     const name = document.getElementById('contact-name');
     const email = document.getElementById('contact-email');
@@ -94,15 +62,4 @@ export function validateContactForm() {
 
 
     })
-}
-
-
-export function mapBox() {
-    var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
-
-    mapboxgl.accessToken = 'pk.eyJ1Ijoicm96ZXJiYWdoIiwiYSI6ImNrY3kxNG9qYjA1ZDUzMWw3anpuZjB5MHkifQ.vKatxynEU4-IxDSGpGGvaA';
-    var map = new mapboxgl.Map({
-        container: 'YOUR_CONTAINER_ELEMENT_ID',
-        style: 'mapbox://styles/mapbox/streets-v11'
-    });
 }
