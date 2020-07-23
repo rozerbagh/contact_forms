@@ -16,5 +16,8 @@ $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader, $phoneno) or die("Error!");
 echo "Email sent!";
 
+$conn = mysqli_connect("localhost", "root", "test", "blog_samples") or die("Connection Error: " . mysqli_error($conn));
+	mysqli_query($conn, "INSERT INTO tblcontact (user_name, user_email,subject,content) VALUES ('" . $name. "', '" . $email. "','" . $subject. "','" . $content. "')");
+
 require_once "contact.html";
 ?>
